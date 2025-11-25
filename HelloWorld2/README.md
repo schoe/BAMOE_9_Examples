@@ -14,9 +14,7 @@
 mvn clean compile spring-boot:run -Pdevelopment
 ```
 
-After a successful start, the application will be available at http://:0.0.0.0:8080 address (IP depends on application.properties configuration).
-
-The Swagger UI page (http://0.0.0.0:8080/swagger-ui/index.html) shows all the generated endpoints, providing a way to quickly verify them.
+The Swagger UI page (http://localhost:8280/kogito/swagger-ui/index.html) shows all the generated endpoints, providing a way to quickly verify them.
 
 ### Package and Run
 
