@@ -22,7 +22,7 @@ The Swagger UI page (http://0.0.0.0:8080/swagger-ui/index.html) shows all the ge
 
 ```sh
 mvn clean package
-java -jar ./target/your-application-name.jar
+java -jar -Dspring.profiles.active=dev target\my-bamoe-business-service.jar
 ```
 
 ### Endpoint call (Use Postman or Bruno)
