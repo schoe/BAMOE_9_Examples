@@ -6,6 +6,11 @@
 
 `Just a simple Hello world shell project, looking at https://github.com/bamoe/bamoe-setup`
 
+# Prerequisite
+
+The necessary dependencies are not provided in maven central.  Please run the docker https://quay.io/repository/bamoe/maven-repository to get the maven repository and follow the instruction.
+
+
 # Building and running
 
 ### In dev mode
@@ -23,11 +28,15 @@ mvn clean package
 java -jar -Dspring.profiles.active=dev target\my-bamoe-business-service.jar
 ```
 
-### Endpoint call (Use Postman or Bruno)
+### Endpoint call (Use Postman or Bruno or curl)
 
 ```
 POST http://localhost:8280/kogito/HelloWorld
+{}
+```
 
+```
+curl --location 'http://localhost:8280/kogito/HelloWorld' --header 'Content-Type: application/json' --data '{}'
 ```
 
 ### Enabling security
